@@ -1,0 +1,56 @@
+body {
+  background: #297aac;
+  background-image: radial-gradient(
+    circle at 35% 50%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(254, 254, 254, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+}
+
+.outer-ring {
+  width: 200px;
+  height: 200px;
+  background-image: url(images/outer-ring-mask.svg);
+  opacity: 0.55;
+}
+
+.simon-says {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: 39px;
+  top: 39px;
+}
+
+.simon-says-top {
+  clip: rect(0px, 140px, 70px, 0px);
+}
+
+.simon-says-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.simon-says-bottom-left {
+  clip: rect(70px, 140px, 140px, 0px);
+  clip: rect(70px, 70px, 140px, 0px);
+}
+
+.simon-says-bottom-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.simon-says-bottom-right {
+  clip: rect(70px, 140px, 140px, 0px);
+  clip: rect(70px, 140px, 140px, 70px);
+}
+
+.simon-says-bottom-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
